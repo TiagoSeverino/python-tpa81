@@ -7,7 +7,7 @@ class TPA81():
     TPA81_AMBTEMP = 1
     TPA81_PIXEL = [ 2, 3, 4, 5, 6, 7, 8, 9] #Register for pixels from 1 to 8
 
-    def __init__(self, address=0xD0, bus_num=1):
+    def __init__(self, address=0x68, bus_num=1):
         self.bus_num = bus_num
         self.address = address
         self.bus = smbus.SMBus(bus=bus_num)
