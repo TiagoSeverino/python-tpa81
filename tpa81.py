@@ -14,7 +14,7 @@ class TPA81():
 
     def read_reg(self, reg_addr):
         try:
-            return self.bus.read_byte_data(self.address, reg_addr)
+            return self.bus.read_byte_data(self.address, reg_addr) % 128
         except IOError:
             print "Error Reading TPA81"
             return 0
