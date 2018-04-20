@@ -44,6 +44,9 @@ class TPA81():
 
         return TempArray
 
+    def highestTemp(self):
+        return max(self.allPixelTemp())
+
     def changeAddress(self, newAddr):
         """
         ID | Address
