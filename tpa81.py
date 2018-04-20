@@ -60,6 +60,6 @@ class TPA81():
         adresses = [0xD0, 0xD2, 0xD4, 0xD6, 0xD8, 0xDA, 0xDC, 0xDE]
 
         self.write_reg(self.TPA81_REGADDR, 0xA0)
-        self.write_reg(self.TPA81_REGADDR, 0xA5)
         self.write_reg(self.TPA81_REGADDR, 0xAA)
+        self.write_reg(self.TPA81_REGADDR, 0xA5)
         self.write_reg(self.TPA81_REGADDR, adresses[newAddr])
