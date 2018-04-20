@@ -2,7 +2,7 @@ from tpa81 import *
 
 thermometer = TPA81()
 
-#compass.changeAdress(0)
+#thermometer.changeAdress(0)
 
 print "Version: ", thermometer.softwareVersion()
 print "Ambient Temperature: ", thermometer.ambientTemperature()
