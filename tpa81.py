@@ -44,9 +44,9 @@ class TPA81():
 
         return TempArray
 
-    def changeAdress(self, newAddr):
+    def changeAddress(self, newAddr):
         """
-        ID | Adress
+        ID | Address
         0	 0xD0
         1	 0xD2
         2	 0xD4
@@ -57,9 +57,9 @@ class TPA81():
         7	 0xDE
         """
 
-        adresses = [0xD0, 0xD2, 0xD4, 0xD6, 0xD8, 0xDA, 0xDC, 0xDE]
+        addresses = [0xD0, 0xD2, 0xD4, 0xD6, 0xD8, 0xDA, 0xDC, 0xDE]
 
         self.write_reg(self.TPA81_REGADDR, 0xA0)
         self.write_reg(self.TPA81_REGADDR, 0xAA)
         self.write_reg(self.TPA81_REGADDR, 0xA5)
-        self.write_reg(self.TPA81_REGADDR, adresses[newAddr])
+        self.write_reg(self.TPA81_REGADDR, addresses[newAddr])
